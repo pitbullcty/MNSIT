@@ -1,0 +1,44 @@
+
+
+All Tensors:
+
+index:	size:	real_size:	offset:	addr:	type:	lifelong:	life_start:	life_end:	source node name:
+%0T	#602624S	#602112S	&0	&0	Common	0	0	1	Conv2D-op296
+%1T	#602624S	#602112S	&0	&0	Common	0	1	2	ReLU-op297
+%2T	#151040S	#150528S	&0	&0	Common	0	2	3	MaxPool-op298
+%3T	#205312S	#204800S	&0	&0	Common	0	3	4	Conv2D-op299
+%4T	#205312S	#204800S	&0	&0	Common	0	4	5	ReLU-op300
+%5T	#51712S	#51200S	&0	&0	Common	0	5	6	MaxPool-op301
+%6T	#51712S	#51200S	&0	&0	Common	0	6	7	Reshape-op302
+%7T	#15872S	#15360S	&0	&0	Common	0	7	8	MatMul-op303
+%8T	#15872S	#15360S	&0	&0	Common	0	8	9	BiasAdd-op304
+%9T	#15872S	#15360S	&0	&0	Common	0	9	10	ReLU-op305
+%10T	#11264S	#10752S	&0	&0	Common	0	10	11	MatMul-op306
+%11T	#11264S	#10752S	&0	&0	Common	0	11	12	BiasAdd-op307
+%12T	#11264S	#10752S	&0	&0	Common	0	12	13	ReLU-op308
+%13T	#1536S	#1280S	&0	&0	Common	0	13	14	MatMul-op309
+%14T	#1536S	#1280S	&0	&0	OutputOnly	0	14	14	BiasAdd-op310
+
+
+All Nodes:
+
+$0	Conv2D-op296	0	inputs[%0P, %1P, ]	outputs[%0T, ]	workspace[]	streamID[@4294967295]
+$1	ReLU-op297	0	inputs[%0T, ]	outputs[%1T, ]	workspace[]	streamID[@4294967295]
+$2	MaxPool-op298	0	inputs[%1T, ]	outputs[%2T, ]	workspace[]	streamID[@4294967295]
+$3	Conv2D-op299	0	inputs[%2T, %2P, ]	outputs[%3T, ]	workspace[]	streamID[@4294967295]
+$4	ReLU-op300	0	inputs[%3T, ]	outputs[%4T, ]	workspace[]	streamID[@4294967295]
+$5	MaxPool-op301	0	inputs[%4T, ]	outputs[%5T, ]	workspace[]	streamID[@4294967295]
+$6	Reshape-op302	0	inputs[%5T, ]	outputs[%6T, ]	workspace[]	streamID[@4294967295]
+$7	MatMul-op303	0	inputs[%6T, %3P, ]	outputs[%7T, ]	workspace[]	streamID[@4294967295]
+$8	BiasAdd-op304	0	inputs[%7T, %4P, ]	outputs[%8T, ]	workspace[]	streamID[@4294967295]
+$9	ReLU-op305	0	inputs[%8T, ]	outputs[%9T, ]	workspace[]	streamID[@4294967295]
+$10	MatMul-op306	0	inputs[%9T, %5P, ]	outputs[%10T, ]	workspace[]	streamID[@4294967295]
+$11	BiasAdd-op307	0	inputs[%10T, %6P, ]	outputs[%11T, ]	workspace[]	streamID[@4294967295]
+$12	ReLU-op308	0	inputs[%11T, ]	outputs[%12T, ]	workspace[]	streamID[@4294967295]
+$13	MatMul-op309	0	inputs[%12T, %7P, ]	outputs[%13T, ]	workspace[]	streamID[@4294967295]
+$14	BiasAdd-op310	0	inputs[%13T, %8P, ]	outputs[%14T, ]	workspace[]	streamID[@4294967295]
+
+
+All Stream Groups:
+
+
